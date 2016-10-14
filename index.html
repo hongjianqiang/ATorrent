@@ -10,10 +10,14 @@
 	<script src="js/locale/zh-cn.js"></script>
 	<script src="js/angular.min.js"></script>
 	<script src="js/angular-route.min.js"></script>
+	<script src="js/angular-sanitize.min.js"></script>
+	<script src="js/ui-grid.min.js"></script>
 	<script src="js/ng-notify.min.js"></script>
+	<script src="js/ng-file-upload.min.js"></script>
 	<!-- Cascading Style Sheets -->
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/skeleton.min.css">
+	<link rel="stylesheet" href="css/ui-grid.min.css">
 	<link rel="stylesheet" href="css/ng-notify.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/app.css">
@@ -24,7 +28,8 @@
 		<div class="views" ng-show="$root.client.torrents.length == 0">
 			<a ng-href="#/full">全部功能</a> | 
 			<a ng-href="#/download">仅下载</a> | 
-			<a ng-href="#/view">播放 / 浏览</a>
+			<a ng-href="#/view">播放 / 浏览</a> | 
+			<a ng-href="#/set">设置</a>
 		</div>
 	</header>
 	<div id="viewer" ng-style="$root.viewerStyle"></div>
